@@ -8,4 +8,3 @@ ALTER TABLE singer DROP COLUMN bandName;
 ALTER TABLE album DROP CONSTRAINT FK_A_singerName;
 ALTER TABLE album
     ADD CONSTRAINT FK_A_singerName FOREIGN KEY (singerName) REFERENCES singer (singerName);
-
